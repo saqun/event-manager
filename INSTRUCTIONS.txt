@@ -1,0 +1,56 @@
+Google API AIzaSyBRFveiX_AgFB0cx_lSirK0f4UkpSAaIPE
+
+
+<script type="text/javascript">
+
+window.addEventListener('resize', function(event) {
+  var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  document.getElementById("x").innerHTML  = width + "x" + height;
+});
+
+</script>
+
+Exercise
+
+Event Search Application
+
+The goal of this exercise is to implement a simple PHP web app starting from an existing HTML page that searches for events (in the Arlo sense of the term) in a MySQL database. When you are happy with what you've done send it through to careers@arlo.co.
+
+Prerequisites:
+    - Server like Apache
+    - PHP processor
+    - MySQL database 
+Hint: you can use something like Wamp if you're on windows.
+
+Install:
+You just need to create a database with the login/password you want and plug them from your PHP project.
+This exercise only requires 1 table which can be created with the file 'database-content.sql'.
+
+Constraints:
+    - 'entry-point/unchanged.php' should not be edited
+    - PHP 5 compatible
+    - no type hinting
+    - 'event' object structure should be predefined in a class
+
+Instructions:
+Using the PHP framework of your choice - or raw PHP - implement a search functionality allowing to retrieve specific events from a database depending on criteria such as a keyword, a location and/or a category.
+The starting point 'unchanged.php' should not be changed despite the fact it is poorly written.
+The 'results' page should also include the search functionality in order to continue the search. As you'll be writing the results page you have full control over the new page structure, layout and styles and can make it a considerably better experience than the unchanged page.
+
+An empty search should return all the events except for the ones already finished (finish date in the past). Those ones should never be returned.
+A search where criteria do not match return an empty set.
+Search options behave like logical AND.
+
+The 'results' page will print out the keyword searched, the search components again and the details of each event matching the search - like the title, description, start/finish date, etc.
+Feel free to use Bootstrap or any other library to help you out with the design.
+
+Please provide everything to make your project work properly (full project dependencies, config files, potential virtual machine configs, etc).
+A quick explanation of what you have done can also be interesting, as well as what you would have done differently given more time.
+
+Optional:
+Here are some small improvements that you could make to the functionality, you're not restricted by these ideas:
+    - Search for several keywords separated by a space - e.g. "my pony" will also return "my little pony"
+    - Select multiple Location and Category (Selectize, Bootstrap, etc, usually provide that feature)
+    - Populate Location and Category dropdowns with available locations and categories from the database records
+    - Make the database table content to be populated by a PHP "migration script"

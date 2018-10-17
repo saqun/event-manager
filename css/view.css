@@ -1,0 +1,68 @@
+
+.events_table {
+	font-size: 1.2em;
+    /*line-height: 1.5; */
+	font-weight: 200;
+	width: 96%;
+	margin: auto;
+}
+
+.events_table {
+	border-collapse: collapse;
+}
+.events_table tr {
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.tab_header {
+	background-color: green;
+	color: white;
+	font-weight: 9000; 
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+th:nth-child(1) {
+	text-align: center;
+}
+th {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.event_description {
+	font-size: 1.2em;
+    /*line-height: 1.5; */
+	font-weight: 200;
+}
+
+.event_name {
+	font-size: 1.3rem;
+	font-weight: 600;
+	line-height: 80%;
+	color: orange;
+}
+ .event_location, .event_category {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.events_table tr:hover {
+	background-color: lightgray;
+}
+
+img {
+	width: 20%;
+    height: 20%;
+}
+/*imgdiv {
+width : 60%;
+}
+*/
+
+@media screen and (max-width: 740px) {
+	.events_table {
+		width: 100%;
+		margin: auto;
+	}
+}
